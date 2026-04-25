@@ -3,40 +3,35 @@
 Installs the full Agency roster as Antigravity skills. Each agent is prefixed
 with `agency-` to avoid conflicts with existing skills.
 
+## Quick Navigation
+
+- Install all skills globally: `./scripts/install.sh --tool antigravity`
+- Regenerate skills after editing source agents: `./scripts/convert.sh --tool antigravity`
+- Call a specific agent in Antigravity: use the `agency-<agent-name>` slug
+
 ## Install
 
 ```bash
 ./scripts/install.sh --tool antigravity
 ```
 
-This copies files from `integrations/antigravity/` to
-`~/.gemini/antigravity/skills/`.
+This copies generated files into `~/.gemini/antigravity/skills/`.
 
-## Activate a Skill
+## How To Invoke Skills
 
-In Antigravity, activate an agent by its slug:
-
-```
+```text
 Use the agency-frontend-developer skill to review this component.
 ```
 
-Available slugs follow the pattern `agency-<agent-name>`, e.g.:
+Common slugs:
 - `agency-frontend-developer`
 - `agency-backend-architect`
 - `agency-reality-checker`
 - `agency-growth-hacker`
 
-## Regenerate
+## Generated File Shape
 
-After modifying agents, regenerate the skill files:
-
-```bash
-./scripts/convert.sh --tool antigravity
-```
-
-## File Format
-
-Each skill is a `SKILL.md` file with Antigravity-compatible frontmatter:
+Each skill is a `SKILL.md` with Antigravity-compatible frontmatter:
 
 ```yaml
 ---

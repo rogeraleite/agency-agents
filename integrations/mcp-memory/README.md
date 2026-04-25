@@ -2,6 +2,13 @@
 
 > Give any agent persistent memory across sessions using the Model Context Protocol (MCP).
 
+## Quick Navigation
+
+- If you want to **add persistent memory to an existing agent**, use the pattern in the `Memory Integration` section below
+- If you want to **see a concrete upgraded agent**, open `backend-architect-with-memory.md`
+- If you want to **see a workflow that passes context through memory**, open `../../examples/workflow-with-memory.md`
+- If you want to **wire the memory server into a client**, start with the setup JSON in the next section
+
 ## What It Does
 
 By default, agents in The Agency start every session from scratch. Context is passed manually via copy-paste between agents and sessions. An MCP memory server changes that:

@@ -72,6 +72,44 @@ See the [Multi-Tool Integrations](#-multi-tool-integrations) section below for f
 
 ---
 
+## Navigate by Task
+
+If you want to find the right place fast, start here:
+
+- **Pick an agent by discipline**: browse `engineering/`, `design/`, `marketing/`, `paid-media/`, `product/`, `project-management/`, `sales/`, `support/`, `testing/`, `spatial-computing/`, and `specialized/`
+- **Run the agents in another tool**: go to [`integrations/`](integrations/README.md)
+- **See end-to-end multi-agent examples**: go to [`examples/`](examples/README.md)
+- **Study reusable strategy material**: go to `strategy/playbooks/`, `strategy/runbooks/`, and `strategy/coordination/`
+- **Regenerate converted integration formats**: use `scripts/convert.sh`
+- **Install agents into a target tool or project**: use `scripts/install.sh`
+
+## Project Map
+
+- `engineering/`, `design/`, `marketing/`, `paid-media/`, `product/`, `sales/`, `support/`, `testing/`, `specialized/`
+  source agent definitions grouped by domain
+- `project-management/`
+  producers, shepherds, and execution-focused operators
+- `strategy/`
+  playbooks, runbooks, and coordination patterns
+- `game-development/`
+  engine-specific agents for Godot, Unity, Unreal, and Roblox
+- `integrations/`
+  generated or adapted formats for Claude Code, Cursor, Aider, Windsurf, Gemini CLI, OpenCode, OpenClaw, and others
+- `examples/`
+  orchestration outputs that show how several agents collaborate on one mission
+- `scripts/`
+  conversion and installation utilities
+
+## If You Want To Change X
+
+- **Add or edit an agent**: update the source `.md` file in its domain folder first
+- **Change converted integration output**: inspect `scripts/convert.sh` and the matching folder in `integrations/`
+- **Change install behavior**: inspect `scripts/install.sh`
+- **Document a new orchestration pattern**: add it under `examples/` or `strategy/`
+- **Update tool-specific usage docs**: edit the relevant README in `integrations/<tool>/`
+
+---
+
 ## 🎨 The Agency Roster
 
 ### 💻 Engineering Division

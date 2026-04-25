@@ -1,27 +1,32 @@
 # Claude Code Integration
 
-The Agency was built for Claude Code. No conversion needed — agents work
-natively with the existing `.md` + YAML frontmatter format.
+Use this integration when you want the source Agency agents to work natively in Claude Code without conversion.
+
+## Quick Navigation
+
+- Install all agents: `./scripts/install.sh --tool claude-code`
+- Copy only one category: `cp <category>/*.md ~/.claude/agents/`
+- Find the full roster: see the [main README](../../README.md)
 
 ## Install
 
 ```bash
-# Copy all agents to your Claude Code agents directory
 ./scripts/install.sh --tool claude-code
+```
 
-# Or manually copy a category
+Or copy only one category:
+
+```bash
 cp engineering/*.md ~/.claude/agents/
 ```
 
-## Activate an Agent
+## How To Invoke Agents
 
-In any Claude Code session, reference an agent by name:
-
-```
+```text
 Activate Frontend Developer and help me build a React component.
 ```
 
-```
+```text
 Use the Reality Checker agent to verify this feature is production-ready.
 ```
 

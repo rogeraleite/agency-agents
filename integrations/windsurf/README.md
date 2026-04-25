@@ -3,24 +3,21 @@
 The full Agency roster is consolidated into a single `.windsurfrules` file.
 Rules are **project-scoped** — install them from your project root.
 
+## Quick Navigation
+
+- Install into a project: run the installer from that project root
+- Find the generated file: `.windsurfrules`
+- Regenerate after agent edits: `./scripts/convert.sh --tool windsurf`
+
 ## Install
 
 ```bash
-# Run from your project root
 cd /your/project
 /path/to/agency-agents/scripts/install.sh --tool windsurf
 ```
 
-## Activate an Agent
+## How To Invoke Agents
 
-In Windsurf, reference an agent by name in your prompt:
-
-```
+```text
 Use the Frontend Developer agent to build this component.
-```
-
-## Regenerate
-
-```bash
-./scripts/convert.sh --tool windsurf
 ```

@@ -3,6 +3,37 @@
 This directory contains The Agency integrations and converted formats for
 supported agentic coding tools.
 
+## Navigate by Task
+
+- If you want to **install agents into a specific tool**, open the matching subfolder README below
+- If you want to **know whether a tool is project-scoped or global**, check the tool section before installing
+- If you want to **regenerate converted files after editing source agents**, run `./scripts/convert.sh`
+- If you want to **install from a target project root**, use the project-scoped tools: Cursor, Aider, Windsurf, and OpenCode
+- If you want to **install into a user-level config directory**, use the home-scoped tools: Claude Code, GitHub Copilot, Antigravity, Gemini CLI, and OpenClaw
+
+## Directory Map
+
+- `claude-code/`
+  native `.md` agents for Claude Code
+- `github-copilot/`
+  native `.md` agents for GitHub Copilot
+- `cursor/`
+  converted `.mdc` rules
+- `aider/`
+  consolidated `CONVENTIONS.md`
+- `windsurf/`
+  consolidated `.windsurfrules`
+- `opencode/`
+  generated `.md` subagents
+- `openclaw/`
+  generated workspaces with `SOUL.md`, `AGENTS.md`, and `IDENTITY.md`
+- `gemini-cli/`
+  extension plus `SKILL.md` files
+- `antigravity/`
+  Antigravity `SKILL.md` outputs
+- `mcp-memory/`
+  guidance for adding persistent memory to any agent
+
 ## Supported Tools
 
 - **[Claude Code](#claude-code)** — `.md` agents, use the repo directly

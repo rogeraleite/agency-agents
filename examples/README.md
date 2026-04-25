@@ -1,48 +1,31 @@
 # Examples
 
-This directory contains example outputs demonstrating how the agency's agents can be orchestrated together to tackle real-world tasks.
+This folder shows what The Agency looks like in practice when several agents collaborate on one real task.
+
+## How To Use This Folder
+
+- If you want to **see a full multi-agent deliverable**, start with [`nexus-spatial-discovery.md`](./nexus-spatial-discovery.md)
+- If you want to **design your own orchestration flow**, look at which agents were combined and what outputs they produced
+- If you want to **add a new showcase**, keep it focused on a shared mission, clear role split, and concrete outputs
 
 ## Why This Exists
 
-The agency-agents repo defines dozens of specialized agents across engineering, design, marketing, product, support, spatial computing, and project management. But agent definitions alone don't show what happens when you **deploy them all at once** on a single mission.
+Individual agent prompts explain each specialist well, but they do not show how the team behaves when deployed together. These examples fill that gap.
 
-These examples answer the question: *"What does it actually look like when the full agency collaborates?"*
+## Current Example
 
-## Contents
+### [`nexus-spatial-discovery.md`](./nexus-spatial-discovery.md)
 
-### [nexus-spatial-discovery.md](./nexus-spatial-discovery.md)
+Use this example when you want to study a full discovery workflow across product, engineering, brand, growth, support, UX, project planning, and spatial interface design.
 
-**What:** A complete product discovery exercise where 8 agents worked in parallel to evaluate a software opportunity and produce a unified plan.
+It demonstrates:
+- a single mission with several agents working in parallel
+- coherent handoffs between disciplines
+- outputs that reference each other instead of reading like isolated prompt dumps
 
-**The scenario:** Web research identified an opportunity at the intersection of AI agent orchestration and spatial computing. The entire agency was then deployed simultaneously to produce:
+## What Makes A Good Example
 
-- Market validation and competitive analysis
-- Technical architecture (8-service system design with full SQL schema)
-- Brand strategy and visual identity
-- Go-to-market and growth plan
-- Customer support operations blueprint
-- UX research plan with personas and journey maps
-- 35-week project execution plan with 65 sprint tickets
-- Spatial interface architecture specification
-
-**Agents used:**
-| Agent | Role |
-|-------|------|
-| Product Trend Researcher | Market validation, competitive landscape |
-| Backend Architect | System architecture, data model, API design |
-| Brand Guardian | Positioning, visual identity, naming |
-| Growth Hacker | GTM strategy, pricing, launch plan |
-| Support Responder | Support tiers, onboarding, community |
-| UX Researcher | Personas, journey maps, design principles |
-| Project Shepherd | Phase plan, sprints, risk register |
-| XR Interface Architect | Spatial UI specification |
-
-**Key takeaway:** All 8 agents ran in parallel and produced coherent, cross-referencing plans without coordination overhead. The output demonstrates the agency's ability to go from "find an opportunity" to "here's the full blueprint" in a single session.
-
-## Adding New Examples
-
-If you run an interesting multi-agent exercise, consider adding it here. Good examples show:
-
-- Multiple agents collaborating on a shared objective
-- The breadth of the agency's capabilities
-- Real-world applicability of the agent definitions
+- Multiple agents collaborate on one shared outcome
+- Roles are explicit enough that another team can reuse the pattern
+- Outputs are concrete: plans, specs, roadmaps, briefs, or other deliverables
+- The example teaches orchestration, not just prompt style

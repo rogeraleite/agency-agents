@@ -3,36 +3,37 @@
 The full Agency roster is consolidated into a single `CONVENTIONS.md` file.
 Aider reads this file automatically when it's present in your project root.
 
+## Quick Navigation
+
+- Install into a project: run the installer from that project root
+- Change conversion output: inspect the generated `CONVENTIONS.md`
+- Regenerate after agent edits: run `./scripts/convert.sh --tool aider`
+
 ## Install
 
 ```bash
-# Run from your project root
 cd /your/project
 /path/to/agency-agents/scripts/install.sh --tool aider
 ```
 
-## Activate an Agent
+## How It Works
 
-In your Aider session, reference the agent by name:
+- All Agency agents are consolidated into one `CONVENTIONS.md`
+- Aider reads this file automatically when it exists in the project root
+- You can invoke a specialist by naming the agent in your prompt
 
-```
+## Example Prompts
+
+```text
 Use the Frontend Developer agent to refactor this component.
 ```
 
-```
+```text
 Apply the Reality Checker agent to verify this is production-ready.
 ```
 
 ## Manual Usage
 
-You can also pass the conventions file directly:
-
 ```bash
 aider --read CONVENTIONS.md
-```
-
-## Regenerate
-
-```bash
-./scripts/convert.sh --tool aider
 ```

@@ -3,25 +3,27 @@
 Converts the full Agency roster into Cursor `.mdc` rule files. Rules are
 **project-scoped** — install them from your project root.
 
+## Quick Navigation
+
+- Install into a project: run the installer from that project root
+- Find generated rules: `.cursor/rules/<agent-slug>.mdc`
+- Make a rule always-on: edit its frontmatter and set `alwaysApply: true`
+- Regenerate after agent changes: `./scripts/convert.sh --tool cursor`
+
 ## Install
 
 ```bash
-# Run from your project root
 cd /your/project
 /path/to/agency-agents/scripts/install.sh --tool cursor
 ```
 
-This creates `.cursor/rules/<agent-slug>.mdc` files in your project.
+## How To Invoke Rules
 
-## Activate a Rule
-
-In Cursor, reference an agent in your prompt:
-
-```
+```text
 @frontend-developer Review this React component for performance issues.
 ```
 
-Or enable a rule as always-on by editing its frontmatter:
+## Always-On Example
 
 ```yaml
 ---
@@ -29,10 +31,4 @@ description: Expert frontend developer...
 globs: "**/*.tsx,**/*.ts"
 alwaysApply: true
 ---
-```
-
-## Regenerate
-
-```bash
-./scripts/convert.sh --tool cursor
 ```

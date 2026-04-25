@@ -1,40 +1,33 @@
 # Gemini CLI Integration
 
-Packages all 61 Agency agents as a Gemini CLI extension. The extension
-installs to `~/.gemini/extensions/agency-agents/`.
+Use this integration when you want The Agency packaged as a Gemini CLI extension with one skill folder per agent.
+
+## Quick Navigation
+
+- Generate extension files first: `./scripts/convert.sh --tool gemini-cli`
+- Install globally after generation: `./scripts/install.sh --tool gemini-cli`
+- Find installed files: `~/.gemini/extensions/agency-agents/`
 
 ## Install
 
 ```bash
-# Generate the Gemini CLI integration files first
 ./scripts/convert.sh --tool gemini-cli
-
-# Then install the extension
 ./scripts/install.sh --tool gemini-cli
 ```
 
-## Activate a Skill
+## How To Invoke Skills
 
-In Gemini CLI, reference an agent by name:
-
-```
+```text
 Use the frontend-developer skill to help me build this UI.
 ```
 
-## Extension Structure
+## Installed Structure
 
-```
+```text
 ~/.gemini/extensions/agency-agents/
   gemini-extension.json
   skills/
     frontend-developer/SKILL.md
     backend-architect/SKILL.md
     reality-checker/SKILL.md
-    ...
-```
-
-## Regenerate
-
-```bash
-./scripts/convert.sh --tool gemini-cli
 ```
