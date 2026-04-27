@@ -2,6 +2,37 @@
 
 > **A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
 
+## Workspace Module Contract
+
+## Purpose
+Generic reference library of reusable AI agents. In this workspace, treat it as an upstream-style reference module, not as a MedShare-specific execution project.
+
+## Inputs (with contract reference)
+- Agent review brief: `../../shared_contracts/event.json`
+- Documentation/adaptation request: `../../shared_contracts/article.json`
+
+## Outputs (with contract reference)
+- Agent analysis or adaptation: `outputs/YYYY-MM-DD-name.md`
+- Structured operational event: `../../shared_contracts/event.json`
+
+## Agents used
+- `../../shared_agents/strategist.md`
+- `../../shared_agents/reviewer.md`
+- `../../shared_agents/tester.md`
+
+## Workflows
+- See `WORKFLOWS.md`.
+
+## Integrations
+- Local scripts in `scripts/`.
+- External agent targets documented in the original README below.
+
+## How to run
+- Use the original install/conversion scripts below when working with external tools.
+
+## How to test
+- For local workspace changes, review generated files and run the relevant script with a dry input when available.
+
 [![GitHub stars](https://img.shields.io/github/stars/msitarzewski/agency-agents?style=social)](https://github.com/msitarzewski/agency-agents)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
